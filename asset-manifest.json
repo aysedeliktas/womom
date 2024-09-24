@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/womom/static/css/main.2fd1b75f.css",
+    "main.js": "/womom/static/js/main.2c844ec2.js",
+    "index.html": "/womom/index.html",
+    "main.2fd1b75f.css.map": "/womom/static/css/main.2fd1b75f.css.map",
+    "main.2c844ec2.js.map": "/womom/static/js/main.2c844ec2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2fd1b75f.css",
+    "static/js/main.2c844ec2.js"
+  ]
+}
