@@ -1,6 +1,6 @@
 import axios from "axios"
 
-let service = "https://celalkilnc.github.io/json_host/" 
+let service = "https://aysedeliktas.github.io/womom-data/" 
 
 export const getModuleData = async () => {
     try {
