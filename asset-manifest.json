@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/womom/static/css/main.2fd1b75f.css",
-    "main.js": "/womom/static/js/main.099068fd.js",
+    "main.css": "/womom/static/css/main.41d45ef0.css",
+    "main.js": "/womom/static/js/main.c20910d0.js",
     "index.html": "/womom/index.html",
-    "main.2fd1b75f.css.map": "/womom/static/css/main.2fd1b75f.css.map",
-    "main.099068fd.js.map": "/womom/static/js/main.099068fd.js.map"
+    "main.41d45ef0.css.map": "/womom/static/css/main.41d45ef0.css.map",
+    "main.c20910d0.js.map": "/womom/static/js/main.c20910d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.2fd1b75f.css",
-    "static/js/main.099068fd.js"
+    "static/css/main.41d45ef0.css",
+    "static/js/main.c20910d0.js"
   ]
 }
