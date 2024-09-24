@@ -1,0 +1,21 @@
+.terms-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding-top: 1rem; */
+
+
+}
+
+.policy-area{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+
+    width: 80%;
+    text-wrap: wrap;
+    max-width: 550px;
+ 
+    max-height: 90vh;
+    overflow-y: auto;
+}

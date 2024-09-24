@@ -1,0 +1,16 @@
+.deatil-container {
+    background: linear-gradient(to bottom, #FFFFFF 0%, #493E6A80 80%);
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.child-detail-container{
+    height: 100%;
+    overflow-y: auto;
+    max-width: 44rem;
+    width: 90%;
+}

@@ -1,0 +1,121 @@
+.report-bar-container {
+    width: 99%;
+    /* border: black 1px solid; */
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* padding-top: 0.5rem; */
+    height: fit-content;
+    min-height: 7rem;
+
+    background-color: #FFFFFF;
+
+    margin-bottom: 1.5rem;
+}
+
+.report-bar-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    /* margin: 0.25rem 0; */
+    border-radius: 8px 8px 0 0px;
+
+    width: 100%;
+
+    /* border-bottom: black 1px solid; */
+
+    height: 2rem;
+    background-color: #685b88;
+}
+
+.report-wave{
+    width: 80px; 
+    height: 2rem;
+    position: fixed;
+    background-color: #d1c3f1; /* Set your desired background color */ 
+    clip-path: path("M0,100 C100,0 200,50 300,50 C400,50 500,0 600,0 L600,100 Z");
+}
+
+.report-bar-date {
+    margin: 0;
+    padding-left: 0.5rem;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+
+
+    color: white;
+}
+
+.garbage {
+    padding-right: 0.5rem;
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+}
+
+.fundus-height-info {}
+
+.pulse-info {}
+
+.tension-info {}
+
+.week-info {}
+
+.kg-info {}
+
+.report-bar-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    padding-top: 0.6rem;
+}
+
+.report-info {
+    margin: 0 2rem;
+    margin-bottom: 0.5rem;
+    text-align: start;
+
+}
+
+.report-info-tag {
+    text-wrap: nowrap;
+    margin: 0;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 12px; */
+    font-size: small;
+    line-height: 20px;
+
+    color: #51618C;
+}
+
+.report-info-value {
+    margin: 0;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+
+    color: #162243;
+
+    padding-left: 2px;
+}

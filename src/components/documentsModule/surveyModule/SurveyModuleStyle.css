@@ -1,0 +1,50 @@
+/* Survey Module */
+.survey-module-container {
+    width: 100%;
+}
+
+/* Survey */
+.survey-container {
+    width: 100%;
+    height: fit-content;
+    margin-top: 0.5rem;
+}
+
+.question {
+    width: 100%;
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+
+    color: #493E6A;
+
+    text-align: start;
+
+}
+
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 96%;
+
+    min-height: 6rem;
+    border-radius: 5px;
+    padding: 5px 5px ;
+    resize: vertical; 
+}
+
+.answer:focus {
+    outline: none;
+}
+
+@media (max-width: 390px) {
+ 
+
+}

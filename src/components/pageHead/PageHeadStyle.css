@@ -1,0 +1,42 @@
+.page-head {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    margin-bottom: 1rem;
+
+    padding-top: 1rem;
+}
+
+.head-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.12px;
+
+    color: #2A428C;
+
+    margin: 0;
+
+    width: 100%;
+    max-width: 40rem;
+}
+
+.back-button,
+.menu-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: transparent;
+    border-color: transparent;
+    width: 40px;
+}

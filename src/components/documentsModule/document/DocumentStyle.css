@@ -1,0 +1,40 @@
+.document-container { 
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    /* max-width: 20rem; */
+    box-sizing: border-box;
+
+    border: 1px solid rgba(34, 31, 31, 0.1);
+    border-radius: 6px;
+    background: #FFFFFF;
+    margin-top: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: start;
+
+    color: #2A428C;
+} 
+
+.document-tag{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    
+    justify-content: center;
+    margin: 0;
+
+}
+
+.book-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+
+    width: 2rem;
+    padding:0 0.5rem ;
+}  
+ 

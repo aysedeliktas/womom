@@ -1,0 +1,53 @@
+.video-module-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+    align-items: center;
+}
+
+.yt-image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.yt-image-link {
+    width: 100%;
+    max-width: 28rem;
+    position: relative; /* Play butonunu ortalamak için relative pozisyon */
+}
+
+.thumbnail-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_%282017%29.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    cursor: pointer;
+    z-index: 1; /* Play butonunun üstte görünmesini sağlamak için */
+}
+
+.play-button:hover {
+    opacity: 1;
+}
+
+.video-module-decription {
+    width: 100%;
+    height: auto;
+    text-align: start;
+    margin: 0;
+    margin-top: 1rem;
+    color: #333;
+}

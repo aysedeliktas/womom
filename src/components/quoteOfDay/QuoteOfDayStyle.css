@@ -1,0 +1,50 @@
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* h1{ 
+
+width: 154px;
+height: 36px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px; 
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #2A428C;
+
+ 
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0;
+} */
+
+.quote{
+    /* Bir annenin karnında yeşeren her hayat, dünyanın en büyük mucizesidir. */
+ 
+width: 95%;
+height: auto;
+left: 40px;
+top: 154px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #2A428C;
+
+
+margin: 0;
+}

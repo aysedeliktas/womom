@@ -1,0 +1,15 @@
+.content-module-container {
+    margin-bottom: 2rem;
+}
+
+.module-label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.12px;
+    color: #2A428C;
+
+    text-align: start;
+}
