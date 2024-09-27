@@ -46,13 +46,12 @@ function SetReport() {
 
     // Check if all inputs are filled
     const isFormComplete = kg && week && tension && pulse && fundusHeight;
-    const tensionStyle = { width: "95%",padding:0 }
+    const tensionStyle = { width: "95%", padding: 0 }
 
     return (
         <div className='set-record-container'>
             <PageHead lastPath={"/health-report"} pageName={"Kayıt Oluştur"} />
             <div className="set-record-child">
-                <p className='set-report-alert'>Aşağıdaki alanları eksiksiz doldurunuz.</p>
                 <div className="inputs-area">
                     <div className="health-record-input-area">
                         <p className="record-input-tag">Kilogram</p>
@@ -72,30 +71,25 @@ function SetReport() {
                             onChange={(e) => setWeek(e.target.value)}
                         />
                     </div>
-                    <div className="health-record-input-area" style={{margin:"0"}}>
-                        {/* <p className="record-input-tag">Tansiyon (Büyük - Küçük)</p> */}
-                        <div className='double-inputs'>
-                            <div className="health-record-input-area" style={{justifyContent:"start" }}>
-                            <p className="record-input-tag" style={tensionStyle}>Büyük Tansiyon</p>
-                                <input
-                                    type="number"
-                                    className="health-record-input"
-                                    value={bigTension}
-                                    onChange={(e) => setBigTension(e.target.value)}
-                                    style={tensionStyle}
-                                />
-                            </div>
-                            <div className="health-record-input-area">
-                            <p className="record-input-tag"style={tensionStyle}>Küçük Tansiyon</p>
-                                <input
-                                    type="number"
-                                    className="health-record-input"
-                                    value={tension}
-                                    onChange={(e) => setTension(e.target.value)}
-                                    style={tensionStyle}
-                                />
-                            </div>
-                        </div>
+                    <div className="health-record-input-area" style={{ justifyContent: "start" }}>
+                        <p className="record-input-tag">Büyük Tansiyon</p>
+                        <input
+                            type="number"
+                            className="health-record-input"
+                            value={bigTension}
+                            onChange={(e) => setBigTension(e.target.value)}
+                            
+                        />
+                    </div>
+                    <div className="health-record-input-area">
+                        <p className="record-input-tag" >Küçük Tansiyon</p>
+                        <input
+                            type="number"
+                            className="health-record-input"
+                            value={tension}
+                            onChange={(e) => setTension(e.target.value)}
+                          
+                        />
                     </div>
                     <div className="health-record-input-area">
                         <p className="record-input-tag">Nabız</p>
@@ -119,8 +113,8 @@ function SetReport() {
                 <button
                     onClick={CreateRecord}
                     disabled={!isFormComplete}
-                    className='record-btn'
-                    style={{ backgroundColor: isFormComplete ? "#a99cf6" : "#cdbee0" }}
+                    className='health-record-btn'
+                    style={{ backgroundColor: isFormComplete ? '#6B5EE6' : '#6c5ee66c'  }}
                 >
                     Kaydet
                 </button>

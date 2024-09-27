@@ -30,14 +30,15 @@
     /* border-bottom: black 1px solid; */
 
     height: 2rem;
-    background-color: #685b88;
+    background-color: #6B5EE6;
 }
 
-.report-wave{
-    width: 80px; 
+.report-wave {
+    width: 80px;
     height: 2rem;
     position: fixed;
-    background-color: #d1c3f1; /* Set your desired background color */ 
+    background-color: #d1c3f1;
+    /* Set your desired background color */
     clip-path: path("M0,100 C100,0 200,50 300,50 C400,50 500,0 600,0 L600,100 Z");
 }
 
@@ -55,11 +56,16 @@
     color: white;
 }
 
+.report-bar-row {
+    display: flex;
+    width: 95%;
+}
+
 .garbage {
     padding-right: 0.5rem;
     display: flex;
     flex-direction: row;
-justify-content: center;
+    justify-content: center;
 }
 
 .fundus-height-info {}
@@ -85,7 +91,7 @@ justify-content: center;
 }
 
 .report-info {
-    margin: 0 2rem;
+    width: 33%;
     margin-bottom: 0.5rem;
     text-align: start;
 
@@ -102,7 +108,7 @@ justify-content: center;
     font-size: small;
     line-height: 20px;
 
-    color: #51618C;
+    color: #6B5EE6;
 }
 
 .report-info-value {
@@ -118,4 +124,21 @@ justify-content: center;
     color: #162243;
 
     padding-left: 2px;
+}
+
+@media (max-width: 370px) {
+    .report-bar-info { 
+        display: flex;
+        flex-direction: row; 
+        padding: 0;
+    }
+
+    .report-bar-row {
+        flex-direction: column;
+        width: 45%;
+    }
+
+    .report-info {
+        width: 100%;
+    }
 }

@@ -6,7 +6,7 @@
 
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, #FFFFFF 0%, #493E6A80 80%);
+    background: linear-gradient(to bottom, #f0eefd 0%, #f0eefd 80%);
 }
 
 .child-container {

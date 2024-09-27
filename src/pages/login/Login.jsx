@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './LoginStyle.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { setLocalStorage, getLocalStorage } from '../../utils/LocalStrManager';
 import { setSessionStorage, getSessionStorage } from '../../utils/SessionStrManager';
 import Navbar from '../../components/navbar/Navbar';
@@ -8,7 +8,6 @@ import Navbar from '../../components/navbar/Navbar';
 function Login({ onLoginSuccess }) {
     const [minDate, setMinDate] = useState('');
     const [estimatedDueDate, setEstimatedDueDate] = useState('');
-    const [isChecked, setIsChecked] = useState(false);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [babyGender, setBabyGender] = useState(''); 
@@ -28,15 +27,14 @@ function Login({ onLoginSuccess }) {
             setFirstName(storedData.firstName || '');
             setLastName(storedData.lastName || '');
             setEstimatedDueDate(storedData.estimatedDueDate || '');
-            setIsChecked(storedData.isChecked || false);
             setBabyGender(storedData.babyGender || ''); 
         }
     }, []);
 
     useEffect(() => {
-        const isFormComplete = firstName && lastName && estimatedDueDate && isChecked && babyGender;
+        const isFormComplete = firstName && lastName && estimatedDueDate && babyGender;
         setIsFormValid(isFormComplete);
-    }, [firstName, lastName, estimatedDueDate, isChecked, babyGender]);
+    }, [firstName, lastName, estimatedDueDate, babyGender]);
 
     const capitalizeFirstLetter = (string) => {
         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
@@ -54,17 +52,8 @@ function Login({ onLoginSuccess }) {
             firstName: field === 'firstName' ? value : firstName,
             lastName: field === 'lastName' ? value : lastName,
             estimatedDueDate,
-            isChecked,
             babyGender
         };
-        setSessionStorage('formData', data);
-    };
-
-    const handleCheckboxChange = (e) => {
-        const checked = e.target.checked;
-        setIsChecked(checked);
-        // Save data to sessionStorage
-        const data = { firstName, lastName, estimatedDueDate, isChecked: checked, babyGender };
         setSessionStorage('formData', data);
     };
 
@@ -72,7 +61,7 @@ function Login({ onLoginSuccess }) {
         const value = e.target.value;
         setEstimatedDueDate(value);
         // Save data to sessionStorage
-        const data = { firstName, lastName, estimatedDueDate: value, isChecked, babyGender };
+        const data = { firstName, lastName, estimatedDueDate: value, babyGender };
         setSessionStorage('formData', data);
     };
 
@@ -80,7 +69,7 @@ function Login({ onLoginSuccess }) {
         const value = e.target.value;
         setBabyGender(value);
         // Save data to sessionStorage
-        const data = { firstName, lastName, estimatedDueDate, isChecked, babyGender: value };
+        const data = { firstName, lastName, estimatedDueDate, babyGender: value };
         setSessionStorage('formData', data);
     };
 
@@ -95,7 +84,6 @@ function Login({ onLoginSuccess }) {
             firstName,
             lastName,
             estimatedDueDate,
-            isChecked,
             babyGender
         };
         setLocalStorage('formData', formData);
@@ -155,23 +143,12 @@ function Login({ onLoginSuccess }) {
                             onChange={handleDateChange}
                         />
                     </div>
-                    <div className="conditions-service">
-                        <input
-                            type='checkbox'
-                            className='terms-check'
-                            onChange={handleCheckboxChange}
-                            checked={isChecked}
-                        />
-                        <Link to={"/policy"} className='policy-path'>
-                            Hizmet Şartları ve Gizlilik Politikasını
-                        </Link>
-                        <p className='policy-text'> kabul ediyorum.</p>
-                    </div>
                     <button
                         className='next-btn'
-                        style={{ backgroundColor: isFormValid ? '#c1a7dd' : '#CEBEDF' }} 
+                        style={{ backgroundColor: isFormValid ? '#6B5EE6' : '#6c5ee66c' }} 
                         onClick={handleSubmit}
                         disabled={!isFormValid}
+                        
                     >
                         İlerle
                     </button>

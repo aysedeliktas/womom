@@ -43,12 +43,7 @@ function OnBorading() {
       <div className='brand'>
         <div className="logo">
           <AppLogo/>
-        </div>
-        {/* <div className='brand-name'>
-          <h2 className='wo'>Wo</h2>
-          <h2 className='mom'>MoM</h2>
-        </div> */}
-        <AppName/>
+        </div> 
         <h4 className="tag-start">
           {displayedText}
         </h4>

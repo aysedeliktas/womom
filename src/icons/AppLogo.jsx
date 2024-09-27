@@ -8,7 +8,7 @@ function AppLogo() {
     };
 
     return (
-        <img src={`${process.env.PUBLIC_URL}/womomlogo.jpg`} alt="Womom Logo" style={style} />
+        <img src={`${process.env.PUBLIC_URL}/womomlogo2.png`} alt="Womom Logo" style={style} />
     );
 }
 

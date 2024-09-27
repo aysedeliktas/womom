@@ -2,14 +2,15 @@ import React from 'react'
 import "./ActionButtonStyle.css"
 import { Link } from 'react-router-dom'
 
-function ActionButton({ text, action, specificStyle }) {
+function ActionButton({ text, action, specificStyle,to }) {
     return (
-        <button 
+        <Link 
+            to={to}
             className='action-btn'
             onClick={() => action}
             style={specificStyle}>
             {text}
-        </button>
+        </Link>
     )
 }
 

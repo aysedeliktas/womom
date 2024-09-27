@@ -1,0 +1,96 @@
+.member-container {
+    width: 100%;
+    height: fit-content;
+ 
+    box-sizing: border-box;
+
+    margin-bottom: 2rem;
+}
+
+.member-name {
+
+    height: 36px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+
+    color: #493E6A;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+    margin: 0;
+    text-align: start;
+}
+
+.member-referance{
+    height: min-content;
+
+}
+
+.member-title {
+    text-align: start;
+    margin: 0;
+    /* Meghna Kriplani */
+
+    width: 91px;
+    height: 16px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+    letter-spacing: 0.005em;
+
+    /* Healthshots/Black40 */
+    color: #8D8D8D;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.member-image {
+    margin: 1rem 0;
+border-radius: 5px;
+width: 100%;
+} 
+
+.member-desc {
+    text-align: start;
+    /* Dr. Meral Çelik, İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi'nden mezun olduktan sonra kadın doğum uzmanlığı ihtisası yapmıştır. 10 yılı aşkın deneyimiyle gebelik takibi ve kadın sağlığı konularında uzmandır. Güler yüzü ve empatik yaklaşımıyla hastalarıyla güvenilir bir ilişki kurar. */
+
+    width: 100%;
+
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+    letter-spacing: 0.12px;
+
+    /* Neutral/Body-text */
+    color: #4D6280;
+
+    text-wrap: auto;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+
+    margin: 0;
+}

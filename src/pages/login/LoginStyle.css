@@ -27,6 +27,7 @@
 
 .tag {
     width: min-content;
+    margin-top: 0;
 }
 
 .alert {
@@ -59,7 +60,8 @@
     height: 48px;
     padding: 0 1rem;
     border-radius: 10px;
-
+width: 100%;
+box-sizing: border-box;
     transition: all 0.2s ease-in-out;
 }
 
@@ -87,10 +89,12 @@
     border-radius: 10px;
     border-color: transparent;
 
+    margin-top: 2rem;
+
 }
 
 .next-btn:active {
-    background: #c1a7dd;
+    background: #6B5EE6;
 }
 
 .conditions-service {

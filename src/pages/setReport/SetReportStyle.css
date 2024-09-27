@@ -27,9 +27,9 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
+    align-items: center;
     height: 100%;
 
-    overflow-y: auto;
 
     padding-bottom: 1rem;
 }
@@ -66,11 +66,11 @@
 
     flex-direction: row;
     align-items: center;
-
-    width: 90%;
+box-sizing: border-box;
+    width: 95%;
     height: 2rem;
     border-radius: 12px;
-    background: rgba(180, 167, 255, 0.404);
+    background: #F0EEFC;
 
     font-size: larger;
     text-align: center;
@@ -78,33 +78,32 @@
     height: 48px;
 }
 
-.record-btn {
-    color: #FFFFFF;
-    background: #9686b2;
-    width: 100%;
-    border-color: transparent;
+.health-record-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 32px;
+    gap: 10px;
+box-sizing: border-box;
 
-    height: 3rem;
+    width: 95%;
+    height: 48px;
+    left: 34px;
+    top: 750px;
 
-    margin-bottom: 1rem;
-
-
+    color: white;
+    background-color: #6B5EE6;
     border-radius: 16px;
-    width: 90%;
-    max-width: 45rem;
 
-    font-size: large;
+border-color: transparent;
 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+margin: 1rem 0;
 
     transition: all 0.2ms;
 }
 
-.record-btn:focus {
+.health-record-btn:focus {
     border-color: transparent;
 }
 
@@ -122,7 +121,7 @@
     margin: 0;
 }
 
-.double-inputs{
+.double-inputs {
     display: flex;
     justify-content: space-between;
     width: 90%;
