@@ -1,0 +1,43 @@
+.alert-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 23rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 1rem 0;
+
+    max-width: 400px;
+}
+
+
+.warning {
+    margin: 0;
+}
+
+.alert-message {
+    margin: 0;
+}
+
+.alert-btn {
+    /* Button */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 32px;
+    gap: 10px;
+
+    width: 90%;
+    height: 3rem;
+
+    background: #7C2EE6;
+    border-radius: 16px;
+    box-shadow: none;
+    color: #FFFFFF;
+    border-color: transparent;
+}

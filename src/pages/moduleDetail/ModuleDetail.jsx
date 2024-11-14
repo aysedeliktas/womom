@@ -3,14 +3,20 @@ import "./ModuleDetailStyle.css"
 import { useParams } from 'react-router-dom';
 import PageHead from '../../components/pageHead/PageHead';
 import { getModuleDetail } from '../../utils/GetData';
-import ContentModule from '../../contentModule/ContentModule';
+import ContentModule from '../../contentModule/ContentModule'; 
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';  
+import './ModuleDetailStyle.css';
+import AlertPopup from '../../components/alertPopup/AlertPopup';
+
 
 function ModuleDetail() {
     const [moduleDetail, setModuleDetail] = useState(null)
     const { id } = useParams();
 
     useEffect(() => {
-        fnGetData()
+        toast.success("Module details loaded successfully!"); 
+        fnGetData() 
     }, [id]);
 
     const fnGetData = async () => {

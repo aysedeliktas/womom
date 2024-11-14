@@ -5,12 +5,11 @@ import { Link } from 'react-router-dom';
 import { setLocalStorage, getLocalStorage } from '../../utils/LocalStrManager';
 
 function Promo() {
-    const [showProceedButton, setShowProceedButton] = useState(false); // Button görünürlüğünü kontrol etmek için state
+    const [showProceedButton, setShowProceedButton] = useState(false); 
 
     useEffect(() => { 
         const watchedStatus = getLocalStorage('isWatched'); 
-            setShowProceedButton(watchedStatus);  
-            console.log(watchedStatus);
+            setShowProceedButton(watchedStatus);   
             
     }, []);
 
@@ -28,20 +27,18 @@ function Promo() {
                         Uygulamayı Tanıyalım
                     </h2>
                     <div className="promo-svg">
-                        {/* SVG veya görsel eklenebilir */}
                     </div>
                     <p className="promo-content-text">
                         WoMOM, hamilelik sürecini takip eden ve hamilelere eğitim içerikleri sunan bir gebelik uygulamasıdır.
                     </p>
                     <Link
-                        to={"https://www.youtube.com/"}
-                        className='action-btn watch-btn' /* İzleyelim butonu her zaman görünür olacak */
+                        to={"https://www.youtube.com/watch?v=JTZOaEoTAqY"}
+                        className='action-btn watch-btn'
                         style={{ marginTop: "2rem" }}
-                        onClick={handleWatchClick} // Linke tıklandığında butonun görünmesini tetikler
+                        onClick={handleWatchClick}
                     >
                         İzleyelim
                     </Link>
-                    {/* İlerle butonu başlangıçta gizli ve tıklamadan sonra kalıcı olarak görünür olacak */}
                     <Link
                         to={"/policy"}
                         className={`action-btn proceed-btn ${showProceedButton ? 'visible' : ''}`}

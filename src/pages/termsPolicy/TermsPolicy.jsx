@@ -14,8 +14,8 @@ function TermsPolicy() {
             <div className='policy-area'>
                 {TERMS.termsPolicy.map(text => <PolicyParagraph text={text} />)}
                 <span className='policy-span'>
-                    <Link to={"/login"} style={{ width: "100%" }}>
-                        <button className='terms-except-btn'>Kabul Ediyorum</button>
+                    <Link to={"/login"} style={{ width: "fit-content" }} className='linkin-park'>
+                        <button className='terms-except-btn'>Okudum, anladım, kabul ediyorum.</button>
                     </Link>
                 </span>
             </div>

@@ -14,23 +14,25 @@ function VideoModule({ data }) {
         if (match && match[1]) {
             const videoId = match[1];
             return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
-        } else { 
+        } else {
             console.log("Invalid YouTube Url");
             return '';
         }
     }
+console.log(data.url);
 
     return (
         <div className='video-module-container'>
-            <a href={data.url} className='yt-image-link'>
-                <div className="thumbnail-container">
-                    <img src={getYouTubeThumbnailUrl(data.url)} className='yt-image' alt="YouTube Thumbnail" />
-                    <div className="play-button"></div>
-                </div>
-            </a>
-            <p className='video-module-description' style={{textAlign:"start"}}>
-                {data.description}
-            </p>
+            <iframe 
+            width="100%" 
+            height="250"
+             src={data.url} 
+             title="YouTube video player" 
+             frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" 
+             allowfullscreen>
+            </iframe>
         </div>
     )
 }

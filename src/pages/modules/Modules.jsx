@@ -34,10 +34,10 @@ function Modules() {
       <PageHead lastPath={""} pageName={"Modüller"} />
       <QuoteOfDay/>
       <div className='child-container'>
-        <div className='referance'>
+        {/* <div className='referance'>
           <h2 className="welcome">Hoş Geldiniz</h2>
           <p className="user-name">{userName}</p>
-        </div>
+        </div> */}
         <div className="modules" >
           {modules != null && modules?.map(x => <Module data={x} />)}
         </div>

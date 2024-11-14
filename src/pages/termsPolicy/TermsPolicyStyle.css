@@ -17,17 +17,15 @@
 }
 
 .terms-except-btn {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 12px 32px; 
+    padding: 12px 32px;
     color: white;
 
     box-sizing: border-box;
     position: absolute;
-    width: 80%;
     height: 48px;
 
     background: #6B5EE6;
@@ -37,6 +35,19 @@
 
 }
 
-.policy-span{
-    height: 4rem;
+.policy-span {
+    height: 5rem;
+    width: 100%;
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+    align-items: center;
+}
+
+.linkin-park{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

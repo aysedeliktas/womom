@@ -5,28 +5,6 @@
     align-items: center;
 }
 
-/* h1{ 
-
-width: 154px;
-height: 36px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 36px; 
-text-align: center;
-letter-spacing: 0.04em;
-
-color: #2A428C;
-
- 
-flex: none;
-order: 0;
-flex-grow: 0;
-margin: 0;
-} */
-
 .quote{
     /* Bir annenin karnında yeşeren her hayat, dünyanın en büyük mucizesidir. */
  
@@ -45,6 +23,9 @@ letter-spacing: 0.03em;
 
 color: #2A428C;
 
+background-color: white;
+border-radius: 8px;
 
 margin: 0;
+margin-bottom: 10px;
 }

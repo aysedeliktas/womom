@@ -1,7 +1,7 @@
 .member-container {
     width: 100%;
     height: fit-content;
- 
+
     box-sizing: border-box;
 
     margin-bottom: 2rem;
@@ -29,7 +29,7 @@
     text-align: start;
 }
 
-.member-referance{
+.member-referance {
     height: min-content;
 
 }
@@ -39,7 +39,7 @@
     margin: 0;
     /* Meghna Kriplani */
 
-    width: 91px;
+    width: auto;
     height: 16px;
 
     font-family: 'Poppins';
@@ -63,9 +63,12 @@
 
 .member-image {
     margin: 1rem 0;
-border-radius: 5px;
-width: 100%;
-} 
+    border-radius: 5px; 
+
+    width: 60%;
+
+}
+
 
 .member-desc {
     text-align: start;

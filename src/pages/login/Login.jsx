@@ -99,12 +99,12 @@ function Login({ onLoginSuccess }) {
         <div className='login-container'>
             <div className='page-area'>
                 <div className='header'>
-                    <h1 className='tag'>Giriş</h1>
+                    <h1 className='tag'>Profil</h1>
                     <p className="alert">Aşağıdaki alanları doldurunuz.</p>
                 </div>
                 <div className="inputs">
                     <div className='input-area'>
-                        <p className="input-tag">İsim</p>
+                        <p className="input-tag">Ad</p>
                         <input
                             className='data-input'
                             value={firstName}
@@ -113,7 +113,7 @@ function Login({ onLoginSuccess }) {
                         />
                     </div>
                     <div className='input-area'>
-                        <p className="input-tag">Soyisim</p>
+                        <p className="input-tag">Soyad</p>
                         <input
                             className='data-input'
                             value={lastName}
@@ -150,7 +150,7 @@ function Login({ onLoginSuccess }) {
                         disabled={!isFormValid}
                         
                     >
-                        İlerle
+                        Kaydet
                     </button>
                 </div>
             </div>

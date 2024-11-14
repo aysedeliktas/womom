@@ -13,9 +13,10 @@
     align-items: start;
     justify-content: center;
 
-    width: 80%;
-
+    width: 80%; 
     max-width: 550px;
+
+    padding-bottom: 5rem;
 }
 
 .header {

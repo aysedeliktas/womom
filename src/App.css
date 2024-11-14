@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   height: fit-content;
+
+  font-family: "Poppins";
 }
 
 .App-logo {

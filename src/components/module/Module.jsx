@@ -8,7 +8,7 @@ function Module({ data }) {
   return (
     <div className='module-container' onClick={() => navigate(`/module/${data.id}`)}>
       <div className="content">
-        <img className='content-image' src={data.image} sizes='190x190' />
+        <img className='content-image' src={data.image} style={{width:"100px"}} />
         <div className="content-texts">
           <p className="content-tag">{data.tag}</p>
           <p className="content-text">{data.text}</p>
