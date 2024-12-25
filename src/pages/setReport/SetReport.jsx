@@ -3,7 +3,7 @@ import "./SetReportStyle.css";
 import PageHead from '../../components/pageHead/PageHead';
 import Navbar from '../../components/navbar/Navbar';
 import { addHealthReport } from '../../utils/HealthReportHelper';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function SetReport() {
     // State variables for each input
@@ -110,6 +110,16 @@ function SetReport() {
                         />
                     </div>
                 </div>
+                <Link
+                    to={"/user-guide"}
+                    className='health-record-btn'
+                    style={{ backgroundColor:'#6B5EE6',
+                        margin:"0",
+                        textDecoration:"none"
+                      }}
+                >
+                    Kullanıcı Kılavuzu
+                </Link>
                 <button
                     onClick={CreateRecord}
                     disabled={!isFormComplete}

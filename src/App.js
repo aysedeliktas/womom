@@ -13,6 +13,7 @@ import Profile from './pages/profile/Profile';
 import Promo from './pages/promo/Promo';
 import { getLocalStorage, setLocalStorage } from './utils/LocalStrManager';
 import Team from './pages/team/Team';
+import UserManual from './pages/userManual/UserManual';
 
 const PublicRoute = ({ isLoginBefore, children }) => {
   return !isLoginBefore ? children : <Navigate to="/modules" />; 
@@ -142,6 +143,14 @@ function App() {
             element={
               <ProtectedRoute isLoginBefore={isLoginBefore}>
                 <Team />
+              </ProtectedRoute>
+            }
+          />
+           <Route
+            path="/user-guide"
+            element={
+              <ProtectedRoute isLoginBefore={isLoginBefore}>
+                <UserManual />
               </ProtectedRoute>
             }
           />

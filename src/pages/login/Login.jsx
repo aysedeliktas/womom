@@ -100,7 +100,7 @@ function Login({ onLoginSuccess }) {
             <div className='page-area'>
                 <div className='header'>
                     <h1 className='tag'>Profil</h1>
-                    <p className="alert">Aşağıdaki alanları doldurunuz.</p>
+                    {/* <p className="alert">Aşağıdaki alanları doldurunuz.</p> */}
                 </div>
                 <div className="inputs">
                     <div className='input-area'>
@@ -130,7 +130,7 @@ function Login({ onLoginSuccess }) {
                             <option value=''>Cinsiyet Seçiniz</option>
                             <option value='Kız'>Kız</option>
                             <option value='Erkek'>Erkek</option>
-                            <option value='Diğer'>Diğer</option>
+                            <option value='Diğer'>Belirtmek İstemiyorum</option>
                         </select>
                     </div>
                     <div className='input-area'>
